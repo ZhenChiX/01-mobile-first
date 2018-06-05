@@ -8,18 +8,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- TODO: Add a link to a normalize.css file, which should be in your vendor/styles/ directory -->
-<link rel="stylesheet" href="/vendor/styles/normalize.css">
-<!-- TODO: Link in the provided styles/icons.css file so that you can use icon fonts -->
-<link rel="stylesheet" href="vendor/styles/icons.css">
+  <link rel="stylesheet" type:href="/vendor/styles/normalize.css">
+  <!-- TODO: Link in the provided styles/icons.css file so that you can use icon fonts -->
+  <link rel="stylesheet" href="vendor/styles/icons.css">
 
-<!-- TODO: Link in your SMACSS-appropriate CSS files: base, layout, and modules -->
-<link rel="stylesheet" href="styles/base.css">
-<link rel="stylesheet" href="styles/layout.css">
-<link rel="stylesheet" href="styles/modules.css">
+  <!-- TODO: Link in your SMACSS-appropriate CSS files: base, layout, and modules -->
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/modules.css">
 
   <!-- COMMENT: Explain the ordering of the loading of the stylesheets -->
   <!-- PUT YOUR RESPONSE HERE -->
-  
+
   <!-- The browser renders the html from top to the bottom,so we want to place normalize.css first to make sure the page compatiable with all browsers before loads other style sheets. -->
 
   <!-- We use SMACSS to determine the order of our style sheets. so the most general style sheet generally load first follow by more specific. -->
@@ -41,10 +41,11 @@
       </h1>
       <h2>The shocking power of static pages</h2>
     </section>
-    <nav class="icon-menu">
+    <nav>
+      <div class="icon-menu"></div>
       <!-- TODO: Add a hamburger menu icon here, which will show/hide depending on screen width (desktop vs. mobile). -->
 
-      <ul>
+      <ul id="navbar">
         <li class="tab" data-content="articles">
           <a href="#" class="icon-home"> Home</a>
         </li>
@@ -58,6 +59,7 @@
           <a href="http://github.com/brookr" target="_blank" class="icon-github"> GitHub</a>
         </li>
       </ul>
+    
     </nav>
   </header>
   <main>
