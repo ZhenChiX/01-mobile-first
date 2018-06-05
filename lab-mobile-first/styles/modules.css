@@ -5,3 +5,24 @@
 #navbar li a:hover {
     color: red;
 }
+
+img {
+    border: 7px solid beige;
+    border-radius: 12px;
+    box-shadow: 7px 7px 7px #4445;
+}
+
+.pull-right {
+    float: right;
+    margin: 5px auto;
+    clear: both;
+}
+
+.pull-left {
+    float: left;
+    margin: 5px;
+}
+
+#about {
+    clear:both;
+}
