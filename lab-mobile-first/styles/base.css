@@ -3,13 +3,22 @@
     display: none;
 }
 
+#navbar {
+    display: inline-block;
+}
+
 @media only screen and (max-width:640px) {
     .icon-menu {
         display: block;
+        position: absolute;
+        top: 5%;
+        right: 5%;
     }
+
     #navbar {
         display: none;
     }
+
     nav:hover #navbar {
         display: block;
     }
