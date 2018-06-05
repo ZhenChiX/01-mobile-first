@@ -1,10 +1,30 @@
+/* font-family: 'Fontdiner Swanky', cursive; */
+
+/* font-family: 'Original Surfer', cursive; */
+
+h1, h2, h3 {
+    font-family: 'Fontdiner Swanky', cursive;
+}
+
+p {
+    font-family: 'Original Surfer', cursive;
+}
 
 .icon-menu {
     display: none;
 }
 
 #navbar {
-    display: inline-block;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#navbar li a {
+    transition-duration: 500ms
+}
+
+#navbar li a:hover {
+    color: red;
 }
 
 @media only screen and (max-width:640px) {
@@ -14,11 +34,9 @@
         top: 5%;
         right: 5%;
     }
-
     #navbar {
         display: none;
     }
-
     nav:hover #navbar {
         display: block;
     }
